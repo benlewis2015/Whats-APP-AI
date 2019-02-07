@@ -85,10 +85,7 @@ std::set<std::string> Responder::unique_words_set (const std::string &str) {
 }
 
 static double absolute (double a) {
-  if (a < 0)
-    return a * -1;
-  else
-    return a;
+    return a < 0 ? a * -1 : a;
 }
 
 
